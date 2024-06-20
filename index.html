@@ -16,12 +16,17 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 1em 0;
+            padding: 0;
             text-align: center;
         }
-        header img {
-            max-width: 100%;
+        .banner-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .banner-container img {
+            width: 100%;
             height: auto;
+            display: block;
         }
         .container {
             margin-left: 250px;
@@ -142,7 +147,9 @@
 <body>
 
 <header>
-    <img src="https://raw.githubusercontent.com/skunkworksza/Graydontruth/58be94c19f0da7dc5a21fa9ce28929244f4e5a06/skunkworks%20talent_graydontruth_transparant.svg" alt="Skunkworks Logo">
+    <div class="banner-container">
+        <img src="https://raw.githubusercontent.com/skunkworksza/Graydontruth/58be94c19f0da7dc5a21fa9ce28929244f4e5a06/skunkworks%20talent_graydontruth_transparant.svg" alt="Skunkworks Logo">
+    </div>
 </header>
 
 <div class="sidebar-left">
