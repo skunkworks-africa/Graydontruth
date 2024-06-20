@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onboarding Manual for Ricky Roberts</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/skunkworksza/Graydontruth/aedcc1439e6d9c6b56db47018a747f1be901b61e/favicon.svg">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,9 +25,10 @@
         }
         .container {
             margin-left: 250px;
+            margin-right: 250px;
             padding: 20px;
         }
-        .sidebar {
+        .sidebar-left {
             height: 100%;
             width: 250px;
             position: fixed;
@@ -35,15 +36,36 @@
             left: 0;
             background-color: #333;
             padding-top: 20px;
+            overflow-x: hidden;
         }
-        .sidebar a {
+        .sidebar-left a {
             padding: 10px 15px;
             text-decoration: none;
             font-size: 18px;
             color: #fff;
             display: block;
         }
-        .sidebar a:hover {
+        .sidebar-left a:hover {
+            background-color: #575757;
+        }
+        .sidebar-right {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #333;
+            padding-top: 20px;
+            overflow-x: hidden;
+        }
+        .sidebar-right a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+        }
+        .sidebar-right a:hover {
             background-color: #575757;
         }
         section {
@@ -51,6 +73,7 @@
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .section-title {
             font-size: 1.5em;
@@ -59,6 +82,10 @@
         }
         .content {
             margin-bottom: 10px;
+        }
+        .divider {
+            border-top: 2px solid #ccc;
+            margin: 20px 0;
         }
         footer {
             background-color: #333;
@@ -69,16 +96,56 @@
             width: 100%;
             bottom: 0;
             margin-left: 250px;
+            margin-right: 250px;
+        }
+        a.pop-up-link {
+            position: relative;
+        }
+        a.pop-up-link::after {
+            content: attr(data-hover);
+            position: absolute;
+            left: 0;
+            bottom: -1.5em;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 0.9em;
+            border-radius: 5px;
+            opacity: 0;
+            white-space: nowrap;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        a.pop-up-link:hover::after {
+            opacity: 1;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 10px;
+            }
+            .sidebar-left,
+            .sidebar-right {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding-top: 0;
+            }
+            footer {
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="https://github.com/skunkworksza/Media/blob/main/Exceptional%20Talent.png?raw=true" alt="Skunkworks Logo">
+    <img src="https://raw.githubusercontent.com/skunkworksza/Graydontruth/58be94c19f0da7dc5a21fa9ce28929244f4e5a06/skunkworks%20talent_graydontruth_transparant.svg" alt="Skunkworks Logo">
 </header>
 
-<div class="sidebar">
+<div class="sidebar-left">
     <a href="#introduction">Introduction</a>
     <a href="#company-overview">Company Overview</a>
     <a href="#contact-details">Contact Details</a>
@@ -94,6 +161,54 @@
     <a href="#conclusion">Conclusion</a>
 </div>
 
+<div class="sidebar-right">
+    <a href="https://www.adobe.com/products/xd.html" class="pop-up-link" data-hover="Adobe XD">Adobe XD</a>
+    <a href="https://www.sketch.com/" class="pop-up-link" data-hover="Sketch">Sketch</a>
+    <a href="https://www.invisionapp.com/" class="pop-up-link" data-hover="InVision">InVision</a>
+    <a href="https://www.axure.com/" class="pop-up-link" data-hover="Axure RP">Axure RP</a>
+    <a href="https://www.figma.com/" class="pop-up-link" data-hover="Figma">Figma</a>
+    <a href="https://marvelapp.com/" class="pop-up-link" data-hover="Marvel">Marvel</a>
+    <a href="https://proto.io/" class="pop-up-link" data-hover="Proto.io">Proto.io</a>
+    <a href="https://balsamiq.com/" class="pop-up-link" data-hover="Balsamiq">Balsamiq</a>
+    <a href="https://www.uxpin.com/" class="pop-up-link" data-hover="UXPin">UXPin</a>
+    <a href="https://www.usertesting.com/" class="pop-up-link" data-hover="UserTesting">UserTesting</a>
+    <a href="https://lookback.io/" class="pop-up-link" data-hover="Lookback">Lookback</a>
+    <a href="https://www.hotjar.com/" class="pop-up-link" data-hover="Hotjar">Hotjar</a>
+    <a href="https://usabilityhub.com/" class="pop-up-link" data-hover="UsabilityHub">UsabilityHub</a>
+    <a href="https://www.optimalworkshop.com/" class="pop-up-link" data-hover="Optimal Workshop">Optimal Workshop</a>
+    <a href="https://www.crazyegg.com/" class="pop-up-link" data-hover="Crazy Egg">Crazy Egg</a>
+    <a href="https://www.optimizely.com/" class="pop-up-link" data-hover="Optimizely">Optimizely</a>
+    <a href="https://www.qualtrics.com/" class="pop-up-link" data-hover="Qualtrics">Qualtrics</a>
+    <a href="https://www.adobe.com/analytics/adobe-analytics.html" class="pop-up-link" data-hover="Adobe Analytics">Adobe Analytics</a>
+    <a href="https://mixpanel.com/" class="pop-up-link" data-hover="Mixpanel">Mixpanel</a>
+    <a href="https://vwo.com/" class="pop-up-link" data-hover="VWO (Visual Website Optimizer)">VWO</a>
+    <a href="https://search.google.com/search-console/about" class="pop-up-link" data-hover="Google Search Console">Google Search Console</a>
+    <a href="https://neilpatel.com/ubersuggest/" class="pop-up-link" data-hover="Ubersuggest">Ubersuggest</a>
+    <a href="https://majestic.com/" class="pop-up-link" data-hover="Majestic">Majestic</a>
+    <a href="https://buzzsumo.com/" class="pop-up-link" data-hover="BuzzSumo">BuzzSumo</a>
+    <a href="https://sproutsocial.com/" class="pop-up-link" data-hover="Sprout Social">Sprout Social</a>
+    <a href="https://slack.com/" class="pop-up-link" data-hover="Slack">Slack</a>
+    <a href="https://www.microsoft.com/en/microsoft-365/microsoft-teams/group-chat-software" class="pop-up-link" data-hover="Microsoft Teams">Microsoft Teams</a>
+    <a href="https://monday.com/" class="pop-up-link" data-hover="Monday.com">Monday.com</a>
+    <a href="https://asana.com/" class="pop-up-link" data-hover="Asana">Asana</a>
+    <a href="https://trello.com/" class="pop-up-link" data-hover="Trello">Trello</a>
+    <a href="https://miro.com" class="pop-up-link" data-hover="Miro">Miro</a>
+    <a href="https://mailchimp.com/" class="pop-up-link" data-hover="Mailchimp">Mailchimp</a>
+    <a href="https://www.hubspot.com/" class="pop-up-link" data-hover="HubSpot">HubSpot</a>
+    <a href="https://buffer.com/" class="pop-up-link" data-hover="Buffer">Buffer</a>
+    <a href="https://hootsuite.com/" class="pop-up-link" data-hover="Hootsuite">Hootsuite</a>
+    <a href="https://zapier.com/" class="pop-up-link" data-hover="Zapier">Zapier</a>
+    <a href="https://airtable.com/" class="pop-up-link" data-hover="Airtable">Airtable</a>
+    <a href="https://www.notion.so/" class="pop-up-link" data-hover="Notion">Notion</a>
+    <a href="https://www.process.st/" class="pop-up-link" data-hover="Process Street">Process Street</a>
+    <a href="https://www.smartsheet.com/" class="pop-up-link" data-hover="Smartsheet">Smartsheet</a>
+    <a href="https://aws.amazon.com/security-hub/" class="pop-up-link" data-hover="AWS Security Hub">AWS Security Hub</a>
+    <a href="https://azure.microsoft.com/en-us/services/security-center/" class="pop-up-link" data-hover="Microsoft Azure Security Center">Microsoft Azure Security Center</a>
+    <a href="https://us.norton.com/small-business" class="pop-up-link" data-hover="Norton Small Business">Norton Small Business</a>
+    <a href="https://www.cloudflare.com/" class="pop-up-link" data-hover="Cloudflare">Cloudflare</a>
+    <a href="https://www.lastpass.com/" class="pop-up-link" data-hover="LastPass">LastPass</a>
+</div>
+
 <div class="container">
 
     <section id="introduction">
@@ -102,6 +217,7 @@
             <p>Welcome to Skunkworks (Pty) Ltd, Ricky. We are excited to have you on board as a part of our team. This manual will guide you through the onboarding process and provide you with essential information to help you get started in your role.</p>
         </div>
     </section>
+    <div class="divider"></div>
 
     <section id="company-overview">
         <h2 class="section-title">Company Overview</h2>
@@ -109,6 +225,7 @@
             <p>Skunkworks (Pty) Ltd specializes in leading managed cloud services and IT training. Our mission is to provide innovative technology solutions and exceptional service to our clients. As a part of our team, you will play a vital role in achieving our goals and maintaining our high standards.</p>
         </div>
     </section>
+    <div class="divider"></div>
 
     <section id="contact-details">
         <h2 class="section-title">Contact Details</h2>
@@ -122,6 +239,7 @@
             </ul>
         </div>
     </section>
+    <div class="divider"></div>
 
     <section id="policies">
         <h2 class="section-title">Policies</h2>
@@ -135,6 +253,7 @@
             </ul>
         </div>
     </section>
+    <div class="divider"></div>
 
     <section id="role-responsibilities">
         <h2 class="section-title">Role and Responsibilities</h2>
@@ -149,6 +268,7 @@
             <p>Detailed descriptions of your duties will be provided as you begin your projects. If you have any questions about your role, please do not hesitate to ask.</p>
         </div>
     </section>
+    <div class="divider"></div>
 
     <section id="training-development">
         <h2 class="section-title">Training and Development</h2>
@@ -163,6 +283,7 @@
             <p>We encourage you to take full advantage of these opportunities to grow your skills and advance your career.</p>
         </div>
     </section>
+    <div class="divider"></div>
 
     <section id="tools-resources">
         <h2 class="section-title">Tools and Resources</h2>
@@ -179,6 +300,7 @@
             <p>Detailed instructions on setting up and using these tools will be provided during your induction.</p>
         </div>
     </section>
+    <div class="divider"></div>
 
     <section id="performance-expectations">
         <h2 class="section-title">Performance Expectations</h2>
@@ -194,6 +316,7 @@
             <p>Regular performance reviews will be conducted to provide feedback and support your professional growth.</p>
         </div>
     </section>
+    <div class="divider"></div>
 
     <section id="company-culture">
         <h2 class="section-title">Company Culture</h2>
@@ -209,6 +332,7 @@
             <p>We strive to create an environment where everyone feels valued and can thrive. Your contributions to our culture are highly appreciated.</p>
         </div>
     </section>
+    <div class="divider"></div>
 
     <section id="support-resources">
         <h2 class="section-title">Support and Resources</h2>
@@ -224,6 +348,7 @@
             <p>If you need any assistance or have questions, please reach out to the relevant support team.</p>
         </div>
     </section>
+    <div class="divider"></div>
 
     <section id="health-safety">
         <h2 class="section-title">Health and Safety</h2>
@@ -239,6 +364,7 @@
             <p>For more detailed information, please refer to the health and safety manual provided during your induction.</p>
         </div>
     </section>
+    <div class="divider"></div>
 
     <section id="policies-procedures">
         <h2 class="section-title">Policies and Procedures</h2>
@@ -254,6 +380,7 @@
             <p>For a comprehensive list of our policies and procedures, please refer to the employee handbook provided during your induction.</p>
         </div>
     </section>
+    <div class="divider"></div>
 
     <section id="conclusion">
         <h2 class="section-title">Conclusion</h2>
