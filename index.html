@@ -13,12 +13,14 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        header {
+        .header-container, .footer-container {
+            margin-left: 250px;
+            margin-right: 250px;
             background-color: #333;
             text-align: center;
             overflow: hidden;
         }
-        header img {
+        .header-container img, .footer-container img {
             width: 100%;
             height: auto;
         }
@@ -93,9 +95,6 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
             margin-left: 250px;
             margin-right: 250px;
         }
@@ -121,7 +120,7 @@
             opacity: 1;
         }
         @media (max-width: 768px) {
-            .container {
+            .container, .header-container, .footer-container {
                 margin-left: 0;
                 margin-right: 0;
                 padding: 10px;
@@ -142,9 +141,9 @@
 </head>
 <body>
 
-<header>
+<div class="header-container">
     <img src="https://raw.githubusercontent.com/skunkworksza/Graydontruth/58be94c19f0da7dc5a21fa9ce28929244f4e5a06/skunkworks%20talent_graydontruth_transparant.svg" alt="Skunkworks Logo">
-</header>
+</div>
 
 <div class="sidebar-left">
     <a href="#introduction">Introduction</a>
@@ -393,7 +392,7 @@
 
 </div>
 
-<footer>
+<footer class="footer-container">
     <p>&copy; 2024 Skunkworks (Pty) Ltd. All rights reserved.</p>
 </footer>
 
