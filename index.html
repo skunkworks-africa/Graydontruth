@@ -19,20 +19,32 @@
             padding: 1em 0;
             text-align: center;
         }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
         .container {
-            width: 80%;
-            margin: 0 auto;
-            overflow: hidden;
+            margin-left: 250px;
+            padding: 20px;
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 20px;
         }
-        nav a {
-            margin: 0 15px;
+        .sidebar a {
+            padding: 10px 15px;
             text-decoration: none;
-            color: #333;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
         }
         section {
             background: #fff;
@@ -56,21 +68,31 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+            margin-left: 250px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to Skunkworks (Pty) Ltd</h1>
+    <img src="https://github.com/skunkworksza/Media/blob/main/Exceptional%20Talent.png?raw=true" alt="Skunkworks Logo">
 </header>
 
-<nav>
+<div class="sidebar">
     <a href="#introduction">Introduction</a>
     <a href="#company-overview">Company Overview</a>
     <a href="#contact-details">Contact Details</a>
     <a href="#policies">Policies</a>
-</nav>
+    <a href="#role-responsibilities">Role and Responsibilities</a>
+    <a href="#training-development">Training and Development</a>
+    <a href="#tools-resources">Tools and Resources</a>
+    <a href="#performance-expectations">Performance Expectations</a>
+    <a href="#company-culture">Company Culture</a>
+    <a href="#support-resources">Support and Resources</a>
+    <a href="#health-safety">Health and Safety</a>
+    <a href="#policies-procedures">Policies and Procedures</a>
+    <a href="#conclusion">Conclusion</a>
+</div>
 
 <div class="container">
 
@@ -111,6 +133,133 @@
                 <li>IT Security Policy</li>
                 <li>Equal Opportunity Policy</li>
             </ul>
+        </div>
+    </section>
+
+    <section id="role-responsibilities">
+        <h2 class="section-title">Role and Responsibilities</h2>
+        <div class="content">
+            <p>As a new member of the Skunkworks team, your role will involve a variety of tasks and responsibilities. Below is a brief overview of what you can expect:</p>
+            <ul>
+                <li><strong>Technical Support:</strong> Provide technical assistance to clients and team members.</li>
+                <li><strong>Front End Development:</strong> Work on web development projects using HTML, CSS, and JavaScript.</li>
+                <li><strong>Project Management:</strong> Assist in managing projects, ensuring timely delivery and quality standards.</li>
+                <li><strong>Customer Service:</strong> Address customer inquiries and resolve issues effectively.</li>
+            </ul>
+            <p>Detailed descriptions of your duties will be provided as you begin your projects. If you have any questions about your role, please do not hesitate to ask.</p>
+        </div>
+    </section>
+
+    <section id="training-development">
+        <h2 class="section-title">Training and Development</h2>
+        <div class="content">
+            <p>We believe in continuous learning and professional development. As part of your onboarding, you will have access to various training resources and development programs:</p>
+            <ul>
+                <li><strong>Online Courses:</strong> Access to platforms like Coursera and LinkedIn Learning for relevant courses.</li>
+                <li><strong>Certifications:</strong> Support for obtaining industry-recognized certifications such as CompTIA Security+.</li>
+                <li><strong>Workshops:</strong> Participation in internal and external workshops to enhance your skills.</li>
+                <li><strong>Mentorship:</strong> Guidance from experienced team members and opportunities for mentorship.</li>
+            </ul>
+            <p>We encourage you to take full advantage of these opportunities to grow your skills and advance your career.</p>
+        </div>
+    </section>
+
+    <section id="tools-resources">
+        <h2 class="section-title">Tools and Resources</h2>
+        <div class="content">
+            <p>To assist you in your role, we provide various tools and resources. Below is a list of the essential tools you will use:</p>
+            <ul>
+                <li><strong>Microsoft 365:</strong> For email, document management, and collaboration.</li>
+                <li><strong>GitHub:</strong> For version control and collaboration on coding projects.</li>
+                <li><strong>Credly:</strong> To manage and showcase your certifications and achievements.</li>
+                <li><strong>LinkedIn:</strong> For professional networking and maintaining your professional profile.</li>
+                <li><strong>Fiverr and Upwork:</strong> Platforms for freelancing and project opportunities.</li>
+                <li><strong>Obsidian and Notion:</strong> For note-taking and project management.</li>
+            </ul>
+            <p>Detailed instructions on setting up and using these tools will be provided during your induction.</p>
+        </div>
+    </section>
+
+    <section id="performance-expectations">
+        <h2 class="section-title">Performance Expectations</h2>
+        <div class="content">
+            <p>At Skunkworks (Pty) Ltd, we hold high standards for performance and professionalism. Below are some key performance expectations:</p>
+            <ul>
+                <li><strong>Quality of Work:</strong> Deliver high-quality work that meets or exceeds our standards.</li>
+                <li><strong>Timeliness:</strong> Complete tasks and projects within the established deadlines.</li>
+                <li><strong>Communication:</strong> Maintain clear and consistent communication with your team and clients.</li>
+                <li><strong>Proactiveness:</strong> Take initiative to solve problems and improve processes.</li>
+                <li><strong>Continuous Improvement:</strong> Continuously seek ways to improve your skills and contribute to the team's success.</li>
+            </ul>
+            <p>Regular performance reviews will be conducted to provide feedback and support your professional growth.</p>
+        </div>
+    </section>
+
+    <section id="company-culture">
+        <h2 class="section-title">Company Culture</h2>
+        <div class="content">
+            <p>Skunkworks (Pty) Ltd prides itself on fostering a positive and inclusive company culture. Here are some core aspects of our culture:</p>
+            <ul>
+                <li><strong>Collaboration:</strong> We believe in working together to achieve common goals.</li>
+                <li><strong>Innovation:</strong> We encourage creative thinking and innovation in all aspects of our work.</li>
+                <li><strong>Respect:</strong> We treat each other with respect and value diverse perspectives.</li>
+                <li><strong>Work-Life Balance:</strong> We promote a healthy balance between work and personal life.</li>
+                <li><strong>Continuous Learning:</strong> We support ongoing learning and development for all employees.</li>
+            </ul>
+            <p>We strive to create an environment where everyone feels valued and can thrive. Your contributions to our culture are highly appreciated.</p>
+        </div>
+    </section>
+
+    <section id="support-resources">
+        <h2 class="section-title">Support and Resources</h2>
+        <div class="content">
+            <p>We provide various support and resources to help you succeed in your role. Below are some key resources available to you:</p>
+            <ul>
+                <li><strong>HR Support:</strong> Our HR team is available to assist with any employment-related questions or concerns.</li>
+                <li><strong>Technical Support:</strong> Access to technical support for any IT-related issues.</li>
+                <li><strong>Mental Health Resources:</strong> Confidential counseling and support services are available.</li>
+                <li><strong>Professional Development:</strong> Opportunities for training, workshops, and certifications.</li>
+                <li><strong>Employee Assistance Program:</strong> Support for personal and professional challenges you may face.</li>
+            </ul>
+            <p>If you need any assistance or have questions, please reach out to the relevant support team.</p>
+        </div>
+    </section>
+
+    <section id="health-safety">
+        <h2 class="section-title">Health and Safety</h2>
+        <div class="content">
+            <p>Your health and safety are of utmost importance to us. Please take note of the following health and safety guidelines:</p>
+            <ul>
+                <li><strong>Emergency Procedures:</strong> Familiarize yourself with the emergency procedures and evacuation routes.</li>
+                <li><strong>Workstation Ergonomics:</strong> Ensure your workstation is set up ergonomically to prevent strain and injury.</li>
+                <li><strong>Report Hazards:</strong> Immediately report any potential hazards or unsafe conditions to the appropriate personnel.</li>
+                <li><strong>Stay Informed:</strong> Regularly review the health and safety policies and updates.</li>
+                <li><strong>Wellness Programs:</strong> Participate in available wellness programs and initiatives.</li>
+            </ul>
+            <p>For more detailed information, please refer to the health and safety manual provided during your induction.</p>
+        </div>
+    </section>
+
+    <section id="policies-procedures">
+        <h2 class="section-title">Policies and Procedures</h2>
+        <div class="content">
+            <p>To maintain a smooth and efficient working environment, it is important to adhere to our company policies and procedures. Below are some key policies:</p>
+            <ul>
+                <li><strong>Attendance Policy:</strong> Ensure punctuality and regular attendance. Inform your supervisor of any planned absences.</li>
+                <li><strong>IT Security Policy:</strong> Follow best practices for IT security, including password management and data protection.</li>
+                <li><strong>Code of Conduct:</strong> Maintain professionalism and ethical behavior in all interactions.</li>
+                <li><strong>Equal Opportunity Policy:</strong> Support and promote equal opportunities for all employees.</li>
+                <li><strong>Confidentiality Policy:</strong> Respect and protect the confidentiality of company and client information.</li>
+            </ul>
+            <p>For a comprehensive list of our policies and procedures, please refer to the employee handbook provided during your induction.</p>
+        </div>
+    </section>
+
+    <section id="conclusion">
+        <h2 class="section-title">Conclusion</h2>
+        <div class="content">
+            <p>We are delighted to have you as part of our team, Ricky. We are confident that you will make a valuable contribution to Skunkworks (Pty) Ltd. Remember, if you have any questions or need assistance at any time, do not hesitate to reach out to your supervisor or the relevant support team.</p>
+            <p>Welcome aboard, and we look forward to achieving great success together!</p>
         </div>
     </section>
 
